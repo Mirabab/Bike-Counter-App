@@ -21,7 +21,7 @@ if video_file:
     progress_bar = st.progress(0)
     st.write("🔍 Detecting bikes... This may take a moment.")
 
-    model = YOLO("yolov8n.pt")
+    model = model = YOLO("best.pt")
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
